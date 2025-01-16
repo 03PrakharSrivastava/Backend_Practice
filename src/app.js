@@ -17,4 +17,9 @@ app.use(urlencoded({extended:true,limit:'16kB'}));//Enables the server to parse 
 
 app.use(cookieParser);
 
+// router
+import router from "./routes/users.routes";
+
+app.use('/users',router);
+
 export default app;
