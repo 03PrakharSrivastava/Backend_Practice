@@ -20,6 +20,6 @@ app.use(cookieParser);
 // router
 import router from "./routes/users.routes";
 
-app.use('/users',router);
+app.use('/api/users',router);
 
 export default app;
