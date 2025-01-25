@@ -15,6 +15,7 @@ app.use(urlencoded({extended:true,limit:'16kB'}));//Enables the server to parse 
 // Allows nested objects in the payload.
 // Example: key[subkey]=value will be parsed as { key: { subkey: "value" } }.
 
+// cookiepParser is also a middleware which allows us to access .cookie in request and response of a function
 app.use(cookieParser);
 
 // router
