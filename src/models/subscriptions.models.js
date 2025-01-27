@@ -10,4 +10,6 @@ const subscriptionSchema = new Schema({
         ref: "User"
     },
     
-}, {timestamps: true})
+}, {timestamps: true});
+
+export default Subscriptions  = mongoose.Model('Subsctiptions',subscriptionSchema);
